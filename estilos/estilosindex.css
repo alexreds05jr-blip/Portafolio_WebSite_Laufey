@@ -1,0 +1,276 @@
+:root{
+  --navy:#051D31;
+  --gold:#CBA135;
+  --gray:#0D0D0D;
+  --white:#F5F5F5;
+}
+
+@font-face{
+    font-family: 'playfair';
+    src: url(../fuente/playfairdisplay_fuente.ttf);
+}
+
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'playfair';
+  position: relative;
+}
+
+.contenedor {
+  position: relative;
+  max-width:487px;
+}
+
+.contenedor img {
+  height: 1055px;
+  width: 100%;
+  display: block;
+}
+
+.menu-externo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(5,29,49,.95);
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.menu-externo .logo img {
+  height: 60px;
+  margin-left: 190px;
+  margin-top: 10px;
+}
+
+.menu-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-opciones a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.texto-lado{
+  position: absolute;
+  top: 125px;
+  right: calc(500px);
+  width: 480px;
+  color: var(--gray);
+  padding: 10px 0;
+}
+
+.texto-lado h1  {
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-right: -50px;
+}
+
+.texto-lado p {
+  font-size: 18px;
+  margin-right: -50px;
+}
+
+.laufeysing {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  width: 288px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.acerca {
+  color: var(--gray);
+  margin-top: 70px;
+}
+
+.acerca h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.acerca p {
+  font-size: 18px;
+  margin-right: -450px;
+}
+
+.violinimg {
+  display: flex;
+  margin-top: 30px;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.laufeyviolin {
+  height: 285px;
+  width: auto;
+}
+
+.texto-violin {
+  text-align: center;
+  margin-top: 25px;
+  margin-right: -400px;
+  flex: 1;
+  color: var(--gray);
+  font-size: 18px;
+}
+
+.pie{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 475px;
+  margin-right: -500px;
+  font-size: 20px;
+  color: var(--gray);
+}
+
+.aplications{
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.iconstam {
+  height: 35px;
+}
+
+
+@media (max-width: 768px) {
+  .menu-externo {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu-externo .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu-externo .logo img {
+    margin: 0 auto;
+    height: 50px;
+    display: block;
+  }
+
+  .menu-opciones {
+    gap: 12px;
+    align-items: center;
+  }
+
+  .menu-opciones a {
+    font-size: 18px;
+    padding: 8px 12px;
+    display: block;
+  }
+
+  .contenedor img {
+    height: auto;
+    max-height: 1600px;
+    width: 770px;
+  }
+
+  .texto-lado {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .laufeysing {
+    position: static;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .acerca p {
+    margin-right: 0px;
+  }
+
+  .violinimg {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-violin {
+    margin-right: 10px;
+  }
+
+  .pie {
+    margin: 30px 0 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor img {
+    height: auto;
+    max-height: 1400px;
+    width: 550px;
+    object-fit: cover;
+  }
+
+  .texto-lado {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .texto-lado h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .texto-lado p, 
+  .acerca p, 
+  .texto-violin {
+    margin-right: 1px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .laufeyviolin {
+    align-items: center;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .iconstam {
+    height: 30px;
+  }
+
+  .menu-opciones {
+    flex-direction: column; /* Aseguramos columna también aquí */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .menu-opciones a {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+  }
+
+  .pie {
+    margin: 40px 0 0 30px;
+  }
+}
+
