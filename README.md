@@ -40,4 +40,4 @@ El principal desafío fue la aplicación metodológica de los estándares de cal
 
 ## Demo
 
-* **DEMO EN VIVO:** https://laufeyswebsite.netlify.app/
+* **DEMO:** https://laufeyswebsite.netlify.app/
